@@ -26,14 +26,6 @@ function FindProxyForURL(url, host) {
         return "DIRECT";
     }
 
-    // 示例：对特定域名使用代理
-    if (
-        shExpMatch(host, "*.example.com") ||
-        shExpMatch(host, "internal-site.com")
-    ) {
-        return "PROXY 192.168.1.2:7983; PROXY 192.168.1.6:7983";
-    }
-
-    // 默认使用代理链，浏览器会自动尝试第一个，失败则尝试第二个
-    return "PROXY 192.168.1.2:7983; PROXY 192.168.1.6:7983";
+    // 对所有其他域名和IP使用代理链
+    return "PROXY 192.168.1.2:7980; PROXY 192.168.1.6:7980";
 }    
