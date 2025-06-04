@@ -27,5 +27,5 @@ function FindProxyForURL(url, host) {
     }
 
     // 对所有其他域名和IP使用代理链
-    return "PROXY 192.168.1.2:7980; PROXY 192.168.1.6:7980";
+    return "PROXY 192.168.1.2:7983; PROXY 192.168.1.6:7983";
 }    
