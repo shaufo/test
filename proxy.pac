@@ -11,5 +11,5 @@ function FindProxyForURL(url, host) {
     }
 
     // 默认使用主代理，失败则尝试备用代理，最后直连
-    return "PROXY 192.168.1.2:7980; PROXY 192.168.1.6:7980; DIRECT";
+    return "PROXY 192.168.1.2:7893; PROXY 192.168.1.6:7893; DIRECT";
 }
